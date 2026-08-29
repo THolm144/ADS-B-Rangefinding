@@ -1,1 +1,2 @@
 # ADS-B-Rangefinding
+This entire codebase is built off of the use of a software defined radio (SDR) and the readsb 1090 MHz software package. With the SDR plugged in and readsb running, a Gnu Radio flowchart made of two embedded python blocks: the two listed, will gather the ADS-B radio data and turn it into csv files giving the range. You can then do this with two different antennas (mine had a bare dipole vs a dipole with a software optimized reflector) and use the data_gathering.py block to compute the ranges at which you were able to receive data from the two antennae.
